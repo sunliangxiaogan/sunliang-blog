@@ -1,0 +1,82 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="200" height="200" fill="#ffffff"/>
+  
+  <!-- 微信二维码样式 -->
+  <!-- 定位图案 -->
+  <rect x="20" y="20" width="40" height="40" fill="#000000"/>
+  <rect x="24" y="24" width="32" height="32" fill="#ffffff"/>
+  <rect x="28" y="28" width="24" height="24" fill="#000000"/>
+  <rect x="32" y="32" width="16" height="16" fill="#ffffff"/>
+  <rect x="36" y="36" width="8" height="8" fill="#000000"/>
+  
+  <rect x="140" y="20" width="40" height="40" fill="#000000"/>
+  <rect x="144" y="24" width="32" height="32" fill="#ffffff"/>
+  <rect x="148" y="28" width="24" height="24" fill="#000000"/>
+  <rect x="152" y="32" width="16" height="16" fill="#ffffff"/>
+  <rect x="156" y="36" width="8" height="8" fill="#000000"/>
+  
+  <rect x="20" y="140" width="40" height="40" fill="#000000"/>
+  <rect x="24" y="144" width="32" height="32" fill="#ffffff"/>
+  <rect x="28" y="148" width="24" height="24" fill="#000000"/>
+  <rect x="32" y="152" width="16" height="16" fill="#ffffff"/>
+  <rect x="36" y="156" width="8" height="8" fill="#000000"/>
+  
+  <!-- 数据点 -->
+  <!-- 第一行 -->
+  <rect x="70" y="20" width="8" height="8" fill="#000000"/>
+  <rect x="90" y="20" width="8" height="8" fill="#000000"/>
+  <rect x="110" y="20" width="8" height="8" fill="#000000"/>
+  
+  <!-- 第二行 -->
+  <rect x="50" y="40" width="8" height="8" fill="#000000"/>
+  <rect x="70" y="40" width="8" height="8" fill="#000000"/>
+  <rect x="110" y="40" width="8" height="8" fill="#000000"/>
+  
+  <!-- 中间数据 -->
+  <rect x="60" y="60" width="8" height="8" fill="#000000"/>
+  <rect x="80" y="60" width="8" height="8" fill="#000000"/>
+  <rect x="100" y="60" width="8" height="8" fill="#000000"/>
+  <rect x="120" y="60" width="8" height="8" fill="#000000"/>
+  
+  <rect x="50" y="70" width="8" height="8" fill="#000000"/>
+  <rect x="70" y="70" width="8" height="8" fill="#000000"/>
+  <rect x="90" y="70" width="8" height="8" fill="#000000"/>
+  <rect x="110" y="70" width="8" height="8" fill="#000000"/>
+  
+  <rect x="60" y="80" width="8" height="8" fill="#000000"/>
+  <rect x="80" y="80" width="8" height="8" fill="#000000"/>
+  <rect x="100" y="80" width="8" height="8" fill="#000000"/>
+  
+  <rect x="70" y="90" width="8" height="8" fill="#000000"/>
+  <rect x="90" y="90" width="8" height="8" fill="#000000"/>
+  <rect x="110" y="90" width="8" height="8" fill="#000000"/>
+  
+  <!-- 右侧数据 -->
+  <rect x="140" y="70" width="8" height="8" fill="#000000"/>
+  <rect x="160" y="70" width="8" height="8" fill="#000000"/>
+  
+  <rect x="130" y="80" width="8" height="8" fill="#000000"/>
+  <rect x="150" y="80" width="8" height="8" fill="#000000"/>
+  
+  <rect x="140" y="90" width="8" height="8" fill="#000000"/>
+  <rect x="160" y="90" width="8" height="8" fill="#000000"/>
+  
+  <!-- 底部数据 -->
+  <rect x="60" y="130" width="8" height="8" fill="#000000"/>
+  <rect x="80" y="130" width="8" height="8" fill="#000000"/>
+  <rect x="100" y="130" width="8" height="8" fill="#000000"/>
+  <rect x="120" y="130" width="8" height="8" fill="#000000"/>
+  
+  <rect x="70" y="140" width="8" height="8" fill="#000000"/>
+  <rect x="90" y="140" width="8" height="8" fill="#000000"/>
+  <rect x="110" y="140" width="8" height="8" fill="#000000"/>
+  
+  <rect x="50" y="150" width="8" height="8" fill="#000000"/>
+  <rect x="70" y="150" width="8" height="8" fill="#000000"/>
+  <rect x="90" y="150" width="8" height="8" fill="#000000"/>
+  <rect x="110" y="150" width="8" height="8" fill="#000000"/>
+  
+  <!-- 微信标识 -->
+  <text x="100" y="190" text-anchor="middle" font-family="Arial" font-size="10" fill="#000000">微信二维码</text>
+</svg>
