@@ -1,4 +1,4 @@
-# LeonG 个人博客
+# SunLiang 个人博客
 
 一个基于React + Vite构建的现代艺术风格个人博客网站。
 
@@ -21,11 +21,12 @@
 ## 🏗️ 项目结构
 
 ```
-leong-blog/
+sunliang-blog/
 ├── src/
 │   ├── components/          # 可复用组件
 │   │   ├── Navbar.jsx      # 导航栏组件
-│   │   └── HomePage.jsx    # 主页组件
+│   │   ├── HomePage.jsx    # 主页组件
+│   │   └── ContactPage.jsx # 联系页面组件
 │   ├── App.jsx            # 主应用组件
 │   ├── main.jsx           # 应用入口
 │   └── index.css          # 全局样式
@@ -90,5 +91,5 @@ npm run build
 - 网站: SluciuS
 - 开发者: 孙亮
 - 邮箱: slucius@mail.ustc.edu.cn
-- 个人简历: https://isunliang.github.io
+- 个人简历: https://sunliang.github.io
 - 技术栈: React + Vite + Styled-components + Framer Motion

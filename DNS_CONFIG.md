@@ -74,13 +74,12 @@ TTL: 600
 
 ---
 
-### 方案3: GitHub Pages + Cloudflare
-
-#### 1. DNS 配置
-```
+### 方案3:#### GitHub Pages 配置
+```bash
+# 1. DNS 配置
 记录类型: CNAME
 主机记录: www
-记录值: yourusername.github.io
+记录值: sunliangxiaogan.github.io
 TTL: Auto
 
 记录类型: A
