@@ -70,7 +70,7 @@ const ContactPage = () => {
         </ContactItem>
         <ContactItem>
           <ContactLabel>微信</ContactLabel>
-          <ContactValue>frank</ContactValue>
+          <ContactValue>slucius</ContactValue>
         </ContactItem>
       </ContactInfo>
     </ContactContainer>
