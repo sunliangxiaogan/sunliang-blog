@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
+import { useNavigate } from 'react-router-dom'
 
 const HomeContainer = styled.div`
   min-height: 100vh;
@@ -140,6 +141,16 @@ const ActionButton = styled(motion.button)`
 `
 
 const HomePage = () => {
+  const navigate = useNavigate()
+  
+  const handleViewWork = () => {
+    navigate('/tech')
+  }
+  
+  const handleContact = () => {
+    navigate('/contact')
+  }
+  
   return (
     <HomeContainer>
       <VideoPlaceholder />
@@ -154,12 +165,14 @@ const HomePage = () => {
           <ActionButton
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={handleViewWork}
           >
             查看作品
           </ActionButton>
           <ActionButton
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={handleContact}
           >
             联系我
           </ActionButton>
