@@ -9,11 +9,15 @@
         var search = window.location.search;
         var hash = window.location.hash;
         
-        // 重定向到主页，让React Router处理路由
-        window.location.replace('/sunliang-blog/' + hash);
+        // 计算相对于base路径的路由
+        var basePath = '/sunliang-blog';
+        var route = path.substring(basePath.length) + search + hash;
+        
+        // 重定向到SPA应用
+        window.location.replace(basePath + '/#' + route);
     </script>
 </head>
 <body>
-    <p>正在重定向...</p>
+    <p>正在重定向到联系页面...</p>
 </body>
 </html>
