@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Navbar from './components/Navbar'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
+import './styles/global.css'
 
 const AppContainer = styled.div`
   min-height: 100vh;
