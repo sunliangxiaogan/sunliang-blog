@@ -7,7 +7,7 @@ const ContactContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 5rem 2rem 2rem;
   background: var(--bg-primary);
   color: var(--text-primary);
   text-align: center;

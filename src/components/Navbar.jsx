@@ -81,7 +81,7 @@ const NavLink = styled(Link)`
 const Navbar = () => {
   return (
     <NavContainer>
-      <Logo to="/">slucius</Logo>
+      <Logo to="/sunliang-blog/">slucius</Logo>
       <NavLinks>
         <NavLink to="/tech">技术</NavLink>
         <NavLink to="/fitness">运动</NavLink>

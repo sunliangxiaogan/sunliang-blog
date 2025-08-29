@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const FitnessContainer = styled.div`
   min-height: 100vh;
-  padding: 2rem;
+  padding: 5rem 2rem 2rem;
   background: var(--bg-primary);
   color: var(--text-primary);
 `
@@ -66,7 +66,7 @@ const FitnessPage = () => {
       title: '运动注意事项-来自硬派健身',
       excerpt: '基于《硬派健身》的科学观点，总结运动中的关键注意事项和实用建议。',
       date: '2025-08-29',
-      path: '/blogs/hardcore-fitness'
+      path: '/blog/hardcore-fitness'
     }
   ]
 

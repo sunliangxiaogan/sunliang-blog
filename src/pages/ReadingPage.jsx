@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const ReadingContainer = styled.div`
   min-height: 100vh;
-  padding: 2rem;
+  padding: 5rem 2rem 2rem;
   background: var(--bg-primary);
   color: var(--text-primary);
 `
@@ -66,14 +66,14 @@ const ReadingPage = () => {
       title: '平凡的世界',
       excerpt: '一部描写普通人命运变迁的史诗，展现了平凡人生中的不平凡精神。',
       date: '2025-08-29',
-      path: '/blogs/ordinary-world'
+      path: '/blog/ordinary-world'
     },
     {
       id: 'making-friends-with-time',
       title: '和时间做朋友',
       excerpt: '李笑来的时间管理和个人成长方法论，教我们如何与时间合作而非对抗。',
       date: '2025-08-29',
-      path: '/blogs/making-friends-with-time'
+      path: '/blog/making-friends-with-time'
     }
   ]
 

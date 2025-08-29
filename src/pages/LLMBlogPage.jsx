@@ -70,44 +70,28 @@ const LLMBlogPage = () => {
     <BlogContainer>
       <BackButton onClick={handleBack}>返回技术页面</BackButton>
       
-      <BlogTitle>LLM应用</BlogTitle>
+      <BlogTitle>大模型应用</BlogTitle>
       
       <BlogContent>
-        <h2>什么是LLM应用？</h2>
-        <p>大型语言模型（Large Language Model, LLM）应用是指基于LLM技术构建的各种实用程序和系统。这些应用利用LLM的强大语言理解和生成能力，结合其他技术如检索增强生成（RAG）、AI智能体（Agent）等，为用户提供各种智能化服务。</p>
+        <h2>什么是大模型应用？</h2>
+        <p>大模型应用是指基于大型语言模型（Large Language Model, LLM）技术构建的各种实用程序和系统。这些应用利用大模型的强大语言理解和生成能力，结合其他技术如检索增强生成（RAG）等，为用户提供各种智能化服务。</p>
         
-        <h2>主流LLM应用类型</h2>
-        <p>根据GitHub上Shubhamsaboo维护的awesome-llm-apps项目[1]，当前主流的LLM应用可以分为以下几类：</p>
-        
-        <h3>AI Agents（AI智能体）</h3>
-        <p>AI智能体是LLM应用的重要方向，包括：</p>
-        <ul>
-          <li>个人助手类应用（如AI旅行助手、AI健康助手等）</li>
-          <li>专业领域助手（如AI法律顾问、AI招聘助手等）</li>
-          <li>游戏AI（如AI象棋、AI井字棋等）</li>
-        </ul>
+        <h2>主流大模型应用类型</h2>
+        <p>根据GitHub上Shubhamsaboo维护的awesome-llm-apps项目[1]，当前主流的大模型应用可以分为以下几类：</p>
         
         <h3>RAG应用（检索增强生成）</h3>
-        <p>RAG技术通过结合信息检索和语言生成，提升LLM应用的准确性和相关性：</p>
+        <p>RAG技术通过结合信息检索和语言生成，提升大模型应用的准确性和相关性：</p>
         <ul>
-          <li>AI博客搜索</li>
-          <li>自主RAG系统</li>
+          <li>智能文档搜索</li>
+          <li>知识库问答系统</li>
           <li>多模态RAG应用</li>
         </ul>
         
-        <h3>多智能体系统</h3>
-        <p>多个AI智能体协同工作，处理复杂任务：</p>
-        <ul>
-          <li>AI法律智能体团队</li>
-          <li>AI金融智能体团队</li>
-          <li>AI房地产智能体团队</li>
-        </ul>
-        
         <h3>语音AI应用</h3>
-        <p>结合语音识别和合成技术的LLM应用：</p>
+        <p>结合语音识别和合成技术的大模型应用：</p>
         <ul>
-          <li>AI音频导游</li>
-          <li>客户支持语音助手</li>
+          <li>智能语音助手</li>
+          <li>客户支持语音系统</li>
         </ul>
         
         <h2>开源LLM应用项目</h2>
@@ -122,12 +106,12 @@ pip install -r requirements.txt</code></pre>
         <p>3. 选择感兴趣的项目并按照说明文档运行</p>
         
         <h2>发展趋势</h2>
-        <p>LLM应用正朝着更加智能化、专业化和多样化的方向发展：</p>
+        <p>大模型应用正朝着更加智能化、专业化和多样化的方向发展：</p>
         <ul>
-          <li><strong>技术融合</strong>：LLM与RAG、Agent等技术的深度融合</li>
+          <li><strong>技术融合</strong>：大模型与RAG等技术的深度融合</li>
           <li><strong>多模态交互</strong>：支持文本、语音、图像等多种交互方式</li>
           <li><strong>行业定制化</strong>：针对特定行业的专业化应用</li>
-          <li><strong>边缘部署</strong>：在本地设备上运行LLM应用</li>
+          <li><strong>边缘部署</strong>：在本地设备上运行大模型应用</li>
           <li><strong>生产级应用</strong>：从原型开发向生产环境部署演进</li>
         </ul>
         

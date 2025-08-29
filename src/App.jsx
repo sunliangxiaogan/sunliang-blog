@@ -12,6 +12,7 @@ import TestImagePage from './pages/TestImagePage'
 import LLMBlogPage from './pages/LLMBlogPage'
 import RLBlogPage from './pages/RLBlogPage'
 import LLMBlogPage2 from './pages/LLMBlogPage2'
+import BlogPostPage from './pages/BlogPostPage'
 import './styles/global.css'
 
 const AppContainer = styled.div`
@@ -36,6 +37,7 @@ function App() {
           <Route path="/blog/llm-agent" element={<LLMBlogPage />} />
           <Route path="/blog/reinforcement-learning" element={<RLBlogPage />} />
           <Route path="/blog/mainstream-llm" element={<LLMBlogPage2 />} />
+          <Route path="/blog/:slug" element={<BlogPostPage />} />
         </Routes>
       </AppContainer>
     </Router>
