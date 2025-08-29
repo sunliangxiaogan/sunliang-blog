@@ -1,188 +1,96 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-import { motion } from 'framer-motion';
+import React from 'react'
+import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
-const NavContainer = styled(motion.nav)`
+const NavContainer = styled.nav`
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  z-index: 1000;
-  background: rgba(10, 10, 10, 0.9);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-`;
+  background: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+`
 
-const Logo = styled(motion.div)`
+const Logo = styled(Link)`
   font-size: 1.8rem;
-  font-weight: bold;
-  color: #ffffff;
-  cursor: pointer;
-  background: linear-gradient(45deg, #ff006e, #8338ec);
+  font-weight: 700;
+  color: var(--accent-primary);
+  text-decoration: none;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-tertiary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-`;
+  text-shadow: var(--shadow-glow);
+  animation: neon 2s ease-in-out infinite alternate;
+  
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+`
 
 const NavLinks = styled.div`
   display: flex;
   gap: 2rem;
-  align-items: center;
-`;
+  
+  @media (max-width: 768px) {
+    gap: 1rem;
+  }
+`
 
-const NavLink = styled(motion(Link))`
-  color: #b3b3b3;
+const NavLink = styled(Link)`
+  color: var(--text-primary);
   text-decoration: none;
-  font-size: 1rem;
   font-weight: 500;
-  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
   position: relative;
-  padding: 0.5rem 0;
-  transition: color 0.3s ease;
+  overflow: hidden;
   
   &:hover {
-    color: #ffffff;
+    color: var(--accent-primary);
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
   }
   
-  &::after {
+  &::before {
     content: '';
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(45deg, #ff006e, #8338ec);
-    transition: width 0.3s ease;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 255, 136, 0.2), transparent);
+    transition: 0.5s;
   }
   
-  &:hover::after {
-    width: 100%;
+  &:hover::before {
+    left: 100%;
   }
-`;
-
-const GlowEffect = styled(motion.div)`
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(131, 56, 236, 0.1) 0%, transparent 70%);
-  pointer-events: none;
-`;
+`
 
 const Navbar = () => {
-  const [hoveredLink, setHoveredLink] = useState(null);
-
-  const navVariants = {
-    hidden: { y: -100, opacity: 0 },
-    visible: { 
-      y: 0, 
-      opacity: 1,
-      transition: { 
-        duration: 0.8,
-        ease: "easeOut"
-      }
-    }
-  };
-
-  const logoVariants = {
-    initial: { scale: 1 },
-    hover: { 
-      scale: 1.05,
-      transition: { duration: 0.2 }
-    }
-  };
-
-  const linkVariants = {
-    initial: { scale: 1 },
-    hover: { 
-      scale: 1.1,
-      transition: { duration: 0.2 }
-    }
-  };
-
   return (
-    <NavContainer
-      variants={navVariants}
-      initial="hidden"
-      animate="visible"
-    >
-      <Logo
-        variants={logoVariants}
-        initial="initial"
-        whileHover="hover"
-      >
-        SluciuS
-      </Logo>
-      
+    <NavContainer>
+      <Logo to="/">slucius</Logo>
       <NavLinks>
-        <NavLink
-          to="/"
-          variants={linkVariants}
-          initial="initial"
-          whileHover="hover"
-          onMouseEnter={() => setHoveredLink('tech')}
-          onMouseLeave={() => setHoveredLink(null)}
-        >
-          技术
-          {hoveredLink === 'tech' && <GlowEffect />}
-        </NavLink>
-        
-        <NavLink
-          to="/"
-          variants={linkVariants}
-          initial="initial"
-          whileHover="hover"
-          onMouseEnter={() => setHoveredLink('fitness')}
-          onMouseLeave={() => setHoveredLink(null)}
-        >
-          健身
-          {hoveredLink === 'fitness' && <GlowEffect />}
-        </NavLink>
-        
-        <NavLink
-          to="/"
-          variants={linkVariants}
-          initial="initial"
-          whileHover="hover"
-          onMouseEnter={() => setHoveredLink('reading')}
-          onMouseLeave={() => setHoveredLink(null)}
-        >
-          读书
-          {hoveredLink === 'reading' && <GlowEffect />}
-        </NavLink>
-        
-        <NavLink
-          to="/"
-          variants={linkVariants}
-          initial="initial"
-          whileHover="hover"
-          onMouseEnter={() => setHoveredLink('blog')}
-          onMouseLeave={() => setHoveredLink(null)}
-        >
-          博客
-          {hoveredLink === 'blog' && <GlowEffect />}
-        </NavLink>
-        
-        <NavLink
-          to="/contact"
-          variants={linkVariants}
-          initial="initial"
-          whileHover="hover"
-          onMouseEnter={() => setHoveredLink('contact')}
-          onMouseLeave={() => setHoveredLink(null)}
-        >
-          联系我
-          {hoveredLink === 'contact' && <GlowEffect />}
-        </NavLink>
+        <NavLink to="/tech">技术</NavLink>
+        <NavLink to="/fitness">健身</NavLink>
+        <NavLink to="/reading">读书</NavLink>
+        <NavLink to="/blog">博客</NavLink>
+        <NavLink to="/contact">联系我</NavLink>
       </NavLinks>
     </NavContainer>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
