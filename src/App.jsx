@@ -4,6 +4,11 @@ import styled from 'styled-components'
 import Navbar from './components/Navbar'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
+import TechPage from './pages/TechPage'
+import FitnessPage from './pages/FitnessPage'
+import ReadingPage from './pages/ReadingPage'
+import ContactPage from './pages/ContactPage'
+import TestImagePage from './pages/TestImagePage'
 import './styles/global.css'
 
 const AppContainer = styled.div`
@@ -20,6 +25,11 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/tech" element={<TechPage />} />
+          <Route path="/fitness" element={<FitnessPage />} />
+          <Route path="/reading" element={<ReadingPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/test-image" element={<TestImagePage />} />
         </Routes>
       </AppContainer>
     </Router>

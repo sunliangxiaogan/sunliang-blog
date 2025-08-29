@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const AboutContainer = styled.div`
+const FitnessContainer = styled.div`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -29,16 +29,15 @@ const Content = styled.p`
   color: var(--text-secondary);
 `
 
-const AboutPage = () => {
+const FitnessPage = () => {
   return (
-    <AboutContainer>
-      <Title>关于</Title>
+    <FitnessContainer>
+      <Title>运动</Title>
       <Content>
-        这是一个现代艺术风格的个人博客网站，采用React + Vite构建。
-        该页面用于测试GitHub Pages部署配置是否正确。
+        这里分享我的运动经验和健身计划。
       </Content>
-    </AboutContainer>
+    </FitnessContainer>
   )
 }
 
-export default AboutPage
+export default FitnessPage

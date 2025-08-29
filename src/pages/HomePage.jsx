@@ -148,8 +148,8 @@ const HomePage = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <Title>你好, 我是孙亮</Title>
-        <Subtitle>一名爱好生活的AI算法工程师</Subtitle>
+        <Title>你好, 我是亮仔</Title>
+        <Subtitle>一名热爱生活的AI算法工程师</Subtitle>
         <ButtonGroup>
           <ActionButton
             whileHover={{ scale: 1.05 }}

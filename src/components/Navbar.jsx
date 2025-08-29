@@ -84,9 +84,8 @@ const Navbar = () => {
       <Logo to="/">slucius</Logo>
       <NavLinks>
         <NavLink to="/tech">技术</NavLink>
-        <NavLink to="/fitness">健身</NavLink>
+        <NavLink to="/fitness">运动</NavLink>
         <NavLink to="/reading">读书</NavLink>
-        <NavLink to="/blog">博客</NavLink>
         <NavLink to="/contact">联系我</NavLink>
       </NavLinks>
     </NavContainer>
